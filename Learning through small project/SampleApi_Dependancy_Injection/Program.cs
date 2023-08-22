@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddTransient<IOperationTransient, Operation>();
 builder.Services.AddScoped<IOperationScoped, Operation>();
 builder.Services.AddSingleton<IOperationSingleton, Operation>();
+builder.Services.AddTransient<FirstService, FirstService>();
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
